@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset=utf-8></script>
+</head>
+<body>
+<div class="form">
+    <form action="" class="login-form"  method="post">
+        	
+<i class="fa fa-user-circle"></i>
+<input type=" text" class="user-input" name="" placeholder="Username" required>
+<input type="password" class="user-input" name="" placeholder="Password" required>
+<div class="option-01">
+<label class="remember-me"><input type="checkbox" name="">Remember me</label>
+<a href="#">Forgot your password?</a>
+</div>
+<input type="submit" class="btn" name="" value="LOGIN">
+<div class="option-02">
+    <p>Not Registered?<a href="#">Create an Account</a></p>
+</div>
+
+    </form>
+
+    <!-- sign up form -->
+
+    <form action="" class="signup-form" method="post">
+        <i class="fa fa-user-plus"></i>
+        <input type="text" class="user-input" name="" placeholder="Username" required>
+        <input type="email" class="user-input" name="" placeholder="Email ddress" required>
+        <input type="text" class="user-input" name="" placeholder="password" required>
+
+        <input type="submit" class="btn" name="" placeholder="Username" value="SIGN UP">
+
+        <div class="option-02">
+            <p>Already have an Account <a href="#">Sign In</a></p>
+        </div>
+
+    </form>
+</div>
+
+<script type="text/javascript">
+$('.option-02 a').click(function(){
+    $('form').animate({
+        height: "toggle",opacity:"toggle"
+    },"slow");
+})
+
+</script>
+    
+</body>
+</html>
